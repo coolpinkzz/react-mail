@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import Grid from '@material-ui/core/Grid';
 import './App.css';
+//import AccordionFoler from './components/NavTabs/Accordian/Accordian';
+import VerticalTabs from './components/NavTabs/NavTabs'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Grid container>
+                <Grid className="nav" xs={5}>
+                    {/*<AccordionFoler />*/}
+                    <VerticalTabs />
+                </Grid>
+
+                <Grid className="email-content" xs={7}>
+                    <h1></h1>
+                </Grid>
+            </Grid>
+
+        </div>
+    );
 }
 
 export default App;

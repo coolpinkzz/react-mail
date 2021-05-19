@@ -1,0 +1,12 @@
+.preview:hover{
+    background-color: lightgray;
+    cursor: pointer;
+
+}
+button{
+    border: none;
+    text-align: unset;
+    display: block;
+    background: none;
+
+}
